@@ -39,6 +39,23 @@ Progress: 45%
    py live_nav_fetch.py
    ```
 
+## Task 2: Cleaning and SQLite Load
+
+1. Place the following files into `data/raw/`:
+   - `nav_history.csv`
+   - `investor_transactions.csv`
+   - `scheme_performance.csv`
+2. Run:
+   ```powershell
+   py data_pipeline.py
+   ```
+3. This will produce:
+   - cleaned datasets in `data/processed/`
+   - `bluestock_mf.db`
+   - `schema.sql`
+   - `queries.sql`
+   - `data_dictionary.md`
+
 ## Notes
 
 - The project is prepared for initial data ingestion and live NAV fetching.
